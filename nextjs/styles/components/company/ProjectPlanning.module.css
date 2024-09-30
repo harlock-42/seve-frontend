@@ -1,0 +1,151 @@
+.mainContainer {
+    height: 173px;
+    display: flex;
+}
+
+.leftArrow {
+    margin: 43px 0 0 0;
+    width: 32px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.leftArrow > p {
+    color: #02302D;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 38px;
+}
+
+.centerContainer {
+    width: calc(100% - 64px);
+    overflow-x: scroll;
+}
+
+.monthsContainer {
+    display: flex;
+}
+
+.stepsContainer {
+    margin: 15px 0 0 0;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.stepsContainer p {
+    margin: 6px 0 0 8px;
+    color: #02302D;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 21px; 
+}
+
+.firstStep {
+    position: absolute;
+    left: 77px;
+    border-radius: 10px;
+    background: rgba(2, 48, 45, 0.04);
+    width: 405px;
+    height: 59px;
+}
+
+.secondStep {
+    position: absolute;
+    left: 1537px;
+    border-radius: 10px;
+    background: rgba(2, 48, 45, 0.04);
+    width: 405px;
+    height: 59px;
+}
+
+.thirdStep {
+    position: absolute;
+    left: 2235px;
+    border-radius: 10px;
+    background: rgba(2, 48, 45, 0.04);
+    width: 200px;
+    height: 59px;
+}
+
+
+.centerContainer:hover {
+    cursor: pointer;
+}
+
+.centerContainer {
+    scrollbar-width: none;
+}
+  
+.centerContainer::-webkit-scrollbar {
+    display: none;
+}
+  
+
+.monthContainer {
+    margin: 0 60px 0 0px;
+}
+
+.monthContainer > h1 {
+    margin: 4px 0 0 10px;
+    color: #02302D;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 38px;
+}
+
+.circleContainer {
+    position: relative;
+}
+
+.monthContainer p {
+    padding: 0 0 0 20px;
+    color: rgba(2, 48, 45, 0.60);
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 38px;
+}
+
+.addMargin {
+    margin: 43px 0 0 0;
+}
+
+.circle {
+    top: 5px;
+    left: 0;
+    position: absolute;
+    width: 110%;
+}
+
+.rightArrow {
+    width: 32px;
+}
+
+.rightArrow > p {
+    margin: -53px 0 0 20px;
+    color: #02302D;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 38px;
+}
+
+.informationText {
+    margin: 9px 0 0 0;
+}
+
+.informationText p {
+    color: #02302D;
+    text-align: right;
+    font-family: Manrope;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 20px;
+}

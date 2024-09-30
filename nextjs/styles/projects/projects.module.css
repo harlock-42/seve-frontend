@@ -1,0 +1,25 @@
+.container {
+	padding: 40px calc((100% - 972px) / 2);
+}
+
+.project {
+	margin-top: 32px;
+}
+
+.stroke {
+	height: 1px;
+	width: 54.8611111vw; /* 790px / 1440px * 100 */
+	margin: 32px 0 0 calc(50vw - 27.4305556vw); /* 54.8611111vw / 2 */
+	background-color: #02302D;
+}
+
+.footer {
+	margin-top: 56px;
+}
+
+@media screen and (max-width: 1100px) {
+	
+	.project {
+		margin-top: 60px;
+	}
+}

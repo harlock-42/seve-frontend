@@ -1,0 +1,14 @@
+.image {
+    width: 100%;
+    height: auto;
+    border-radius: 100%;
+}
+
+.title {
+    margin: 10px 0 0 0;
+    color: #02302D;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 19px;
+}

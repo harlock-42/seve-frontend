@@ -1,0 +1,14 @@
+.text {
+	margin-left: 5px;
+	display: inline-block;
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 38px;
+
+	color: #02302D;
+}
+
+.arrow {
+	margin-left: 5px;
+	font-size: 14px;
+}

@@ -1,0 +1,43 @@
+.mainContainer {
+    position: relative;
+    width: 100%;
+    height: 346px;
+}
+
+.backgroundImage {
+    position: absolute;
+    width: calc(100vw + 1px);
+    height: 346px;
+    top: 0;
+    left: -1px;
+    object-fit: cover;
+    object-position: center;
+    z-index: 0;
+}
+
+.textContainer {
+    /*
+    ** 6.458333333 = 93px / 1440px * 100
+    */
+    position: relative;
+    margin: -1px 6.458333333vw 0 6.458333333vw;
+    display: inline-block;
+    background-color: #FFF;
+    border-radius: 0 0 30px 30px;
+    z-index: 1;
+}
+
+.textContainer > h1 {
+    padding: 15px 23px 10px 23px;
+    color: #02302D;
+    font-size: 1.5em;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 38px;
+}
+
+@media screen and (max-width: 1000px) {
+    .textContainer > h1 {
+        font-size: clamp(1em, 2.4vw, 1.5em);
+    }
+}

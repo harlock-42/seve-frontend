@@ -1,0 +1,43 @@
+.iconImageContainer {
+    position: relative;
+    width: 87px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.iconImageContainerWhite {
+    position: relative;
+    width: 87px;
+    border-radius: 20px;
+}
+
+.iconImageContainer:hover {
+    background-color: #02302D;
+}
+
+.iconImageComtainerWhiteActivate {
+    position: relative;
+    border-radius: 20px 20px 0 0;
+    width: 87px;
+}
+
+.iconImageComtainerActivate {
+    position: relative;
+    border-radius: 20px 20px 0 0;
+    width: 87px;
+    background-color: #02302D;
+    transition: background-color 0.3s ease;
+}
+
+.userImage {
+    /*
+    ** 
+    */
+	width: clamp(30.75px, 5.857142857vw, 41px);
+    margin: calc(43.5px - (clamp(30.75px, 5.857142857vw, 41px) / 2));
+	height: auto;
+}
+
+.userImage:hover {
+    cursor: pointer;
+}

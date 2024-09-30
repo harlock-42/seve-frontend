@@ -1,0 +1,609 @@
+/* FIRST SECTION */
+
+.sectionOne {
+	position: relative;
+	height: 553px;
+}
+
+.sectionOne > .profilePicture {
+	position: absolute;
+	top: 0;
+	width: 100vw;
+	height: 553px;
+	object-fit: cover;
+	object-position: center 85%;
+	z-index: -1;
+}
+
+.footer {
+	margin-top: 171px;
+}
+
+.resumeContainer {
+	width: 70%;
+	margin: 230px 0 0 15%;
+}
+
+.progressBar {
+	margin: 23px 0 0 0;
+}
+
+.farmimgKind {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 25px;
+	bottom: -34.5px;
+	right: 15%;
+	position: absolute;
+	border-radius: 46px;
+	background-color: #FFF;
+	border: 1px solid #02302D;
+}
+
+.farmimgKind > p {
+	margin: 8px 0 0 14px;
+}
+
+
+/** SECTION TWO */
+
+.dynamicBreadcrumb {
+	/*
+	** 8.125vw = 117 / 1440 * 100
+	*/
+	margin: 0 0 0 8.125vw;
+}
+
+.dynamicBreadcrumb li {
+	color: #02302D;
+	font-size: 0.75em;
+	font-weight: 300;
+	line-height: 38px;
+}
+
+.mainDataTop {
+	/*
+	** 12.847222222vw = 185px / 1440px * 100
+	** 11.458333333vw = 165px / 1440px * 100
+	*/
+	display: flex;
+	justify-content: space-between;
+	margin: 30px 11.458333333vw 0 12.847222222vw;
+}
+
+.mainDataCenter {
+	/*
+	** 15.208333333vw = 219px / 1440px * 100
+	** 14.097222222vw = 203px / 1440px * 100
+	*/
+	margin: 50px 14.097222222vw 0px 15.208333333vw;
+	display: flex;
+	justify-content: space-between;
+}
+
+.spaceAround {
+	justify-content: space-around;
+}
+
+.mainDataCenter h1 {
+	color: #02302D;
+	font-size: 2.5em;
+	font-weight: 600;
+	line-height: 24.5px;
+}
+
+.mainDataCenter h2 {
+	margin: 5px 0 0 0;
+	color: #02302D;
+	font-size: 1.5em;
+	line-height: 24.5px;
+}
+
+.mainDataCenter h3 {
+	margin: 10px 0 0 0;
+	color: #02302D;
+	font-size: 0.875em;
+	line-height: 24.5px;
+}
+
+.mainDataBottom {
+	/*
+	** 12.847222222vw = 185px / 1440px * 100
+	** 11.458333333vw = 165px / 1440px * 100
+	*/
+	display: flex;
+	justify-content: space-between;
+	margin: 0 calc(11.458333333vw - 5px) 0 calc(12.847222222vw - 4px);
+}
+
+/* PARCEL & FARMER INFO */ 
+
+.parcelDescriptionContainer {
+	/*
+	** 15.208333333vw = 219px / 1440px * 100
+	** 14.097222222vw = 203px / 1440px * 100
+	*/
+	margin: 50px 14.097222222vw 0px 15.208333333vw;
+}
+
+.parcelDescriptionContainer > h4 {
+	color: #02302D;
+	font-size: 2.25em;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 38px;
+}
+
+.parcelDescriptionContainer > p {
+	color: #02302D;
+	font-size: 1.25em;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 25px;
+}
+
+.projectTitleContainer {
+	/*
+	** 15.208333333vw = 219px / 1440px * 100
+	** 14.097222222vw = 203px / 1440px * 100
+	*/
+	display: inline-block;
+	margin: 50px 14.097222222vw 0px 15.208333333vw;
+}
+
+.greenStrokeProjectTitle {
+	width: 100%;
+	height: auto;
+}
+
+.farmerInfo {
+	/*
+	** 4.861111111vw = 70px / 1440px * 100
+	*/
+	margin: 40px 4.861111111vw 0 4.861111111vw;
+	background-color: #02302D;
+
+	display: flex;
+	justify-content: space-between;
+	border-radius: 269px;
+}
+
+.farmerMessage {
+	margin: 46px 0 55px 152px;
+	max-width: 61.384615385%;
+	color: #FFF;
+}
+
+.farmerMessage > h1 {
+	font-size: 1.5em;
+	font-weight: 500;
+	line-height: 38px;
+}
+
+.farmerMessage > p {
+	font-size: 1.5em;
+	line-height: 32px;
+	font-weight: 300;
+}
+
+.locationMapImageContainer {
+	display: flex;
+
+	align-items: center;
+	margin: 0 42px 0 0;
+	justify-content: flex-end;
+}
+
+.locationMapImage {
+	border-radius: 60px;
+	margin: 0 0px 0 0;
+}
+
+.locationText {
+	/*
+	** 67.013888889vw = 965px / 1440px * 100
+	*/
+	margin: 0 0 0 67.013888889vw;
+	color: #02302D;
+	font-size: 1.25em;
+	font-weight: 300;
+	line-height: 38px;
+}
+
+.locationMobileDeviceContainer {
+	display: none;
+}
+
+.locationMapImageMobileDeviceContainer {
+	display: flex;
+	margin: 0 0 0 12px;
+	justify-content: center;
+	align-items: center;
+	border-radius: 163px;
+	background-color: #02302D;
+	width: 300px;
+	height: 300px;
+}
+
+.parcelInfo {
+	/*
+	** 15vw = 216px / 1440px * 100
+	*/
+
+	margin: 101px 0 0 15vw;
+	width: 85vw;
+}
+
+.projectTitleContainer > h1 {
+	color: #02302D;
+	font-size: 2.25em;
+	font-weight: 600;
+	line-height: 21px;
+}
+
+.parcelInfo > h2 {
+	margin: 0px 0 0 0;
+	color: #02302D;
+	font-size: 1.5em;
+	font-weight: 400;
+	line-height: 19px;
+}
+
+.treeKindContainer {
+	/*
+	** 69.722222222vw = 1004px / 1440px * 100
+	*/
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 20px;
+	margin: 56px 0 0 0;
+	width: 69.722222222vw;
+}
+
+.treeKindElement {
+	margin: 0 5px 0 0;
+	width: 89px;
+}
+
+.steps {
+	margin: 62px 0 0 0;
+	height: 40px;
+	width: 69.722222222vw;
+}
+
+.agroforestryLinkContainer {
+	display: flex;
+	justify-content: flex-end;
+	width: 69.722222222vw;
+}
+
+.agroforestryLink {
+	/*
+	** 56.458333333 = 813px / 1440px * 100
+	*/
+	display: inline-block;
+	margin: 10px 0 0 0;
+	color: #02302D;
+	font-size: 0.75em;
+	font-weight: 400;
+	line-height: 38px;
+	text-align: end;
+}
+
+.parcelImagesTitle {
+	margin: 18px 0 0 0;
+	color: #02302D;
+	font-size: 1.5em;
+	font-weight: 500;
+	line-height: 38px;
+}
+
+.picturesCarouselContainer {
+	margin: 32px 0 0 0;
+	display: flex;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+}
+
+.picturesCarouselContainer::-webkit-scrollbar {
+    display: none;
+}
+
+.pictureCarousel {
+	border-radius: 20px;
+	width: 420px;
+	margin: 0 20px 0 0;
+}
+
+.contactContainer {
+	display: flex;
+	margin: 108px 0 0 0;
+}
+
+.contactTextContainer {
+	margin: 0 26px 0 0;
+}
+
+.contactTextContainer > h1 {
+	color: #02302D;
+	font-size: 2.25em;
+	font-weight: 500;
+	line-height: 58px;
+}
+
+.contactTextContainer > h2 {
+	color: #02302D;
+	font-size: 1.5em;
+	font-weight: 400;
+	line-height: 42px;
+}
+
+.contactBoxContainer {
+	width: 527px;
+	height: 278px;
+	border-radius: 20px;
+	background-color: rgba(2, 48, 45, 0.12);
+}
+
+.contactBoxContainer > p {
+	margin: 13px 0 0 20px;
+	font-size: 1em;
+	color: #02302D;
+	font-weight: 500;
+}
+
+.contactBoxNested {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	margin: 10px 0 0 1.5%;
+	width: 97%;
+	height: 222px;
+	border-radius: 20px;
+	border: 1px solid rgba(2, 48, 45, 0.18);
+}
+
+.contactBoxNested button {
+	margin: 0 17px 16px 0;
+	color: #02302D;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 21px;
+}
+
+@media screen and (max-width: 1250px) {
+	.farmerInfo {
+		border-radius: 50px;
+	}
+
+	.farmerMessage {
+		/*
+		** 10.306406685vw = 37px / 359px * 100
+		*/
+		margin: 30px 10.306406685vw 40px 10.306406685vw;
+		max-width: 100%;
+	}
+	
+	.locationMapImageContainer {
+		display: none;
+	}
+
+	.locationText {
+		display: none;
+	}
+
+	.locationMobileDeviceContainer {
+		margin: 22px 0 0 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.locationMobileDeviceContainer > p {
+		color: #02302D;
+		font-size: 1.25em;
+		font-weight: 300;
+		line-height: 12.5px;
+	}
+
+	.locationMapImage {
+		display: inline;
+	}
+
+	.locationMapImageMobileDevice {
+		border-radius: 20px;
+		width: 70%;
+		height: auto;
+		border-radius: 20px;
+	}
+
+	.contactContainer {
+		flex-direction: column;
+	}
+
+	.contactBoxContainer {
+		margin-top: 40px;
+	}
+}
+
+@media screen and (max-width: 1150px) {
+	.mainDataCenter {
+		text-align: center;
+		flex-direction: column;
+		align-items: center;
+		height: 300px;
+	}
+
+	.projectTitleContainer > h1 {
+		/*
+		** 3.130434783vw = 36px / 1150px * 100
+		** 1.826086957vw = 21px / 1150px * 100
+		*/
+		font-size: clamp(1.125em, 3.130434783vw, 2.25em);
+		line-height: clamp(10.25px, 1.826086957vw, 21px);
+	}
+
+	.farmerMessage > h1 {
+		/*
+		** 2.086956522vw = 24px / 1150px * 100
+		** 3.304347826VW = 38PX / 1150PX * 100
+		*/
+		font-size: clamp(1.1em, 2.086956522vw, 1.5em);
+		font-weight: 500;
+		line-height: clamp(30px, 3.304347826vw , 38px);
+	}
+	
+	.farmerMessage > p {
+		/*
+		** 2.782608696vw = 32px / 1150px * 100
+		** 2.782608696vw = 32px / 1150px * 100
+		*/
+		font-size: clamp(1em, 2.086956522vw, 1.5em);
+		line-height: clamp(22px, 2.782608696vw, 32px);
+	}
+
+	.parcelDescriptionContainer > h4 {
+		/*
+		** 3.130434783vw = 36px / 1150px * 100
+		** 3.304347826vw = 38px / 1150px * 100
+		*/
+		font-size: clamp(1.125em, 3.130434783vw, 2.25em);
+		line-height: clamp(24px, 3.304347826vw, 38px);
+	}
+	
+	.parcelDescriptionContainer > p {
+		/*
+		** 1.739130435vw = 20px / 1150px * 100
+		** 2.173913043vw = 25px / 1150px * 100
+		*/
+		font-size: clamp(0.9em, 1.739130435vw, 1.25em);
+		line-height: clamp(20px, 2.173913043vw, 25px);
+	}
+	
+	.steps {
+		width: 69.5vw;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.mainDataCenter h1 {
+		/*
+		** 5vw = 40px / 800px * 100
+		*/
+		text-align: center;
+		font-size: clamp(1.25em, 5vw, 2.5em);
+	}
+	.mainDataCenter h2 {
+		/*
+		** 3vw = 24px / 800 * 100
+		*/
+		font-size: clamp(1em, 3vw, 1.5em);
+	}
+
+	.locationMobileDeviceContainer > p {
+		/*
+		** 2.5vw = 20px / 800px * 100
+		*/
+		color: #02302D;
+		font-size: clamp(0.75em, 2.5vw, 1.25em);
+		font-weight: 300;
+		line-height: 12.5px;
+	}
+
+	.locationMapImageMobileDeviceContainer {
+		/*
+		** 37.5vw = 300px / 800px * 100
+		*/
+		width: clamp(132px, 37.5vw, 300px);
+		height: clamp(132px, 37.5vw, 300px);
+	}
+
+	.parcelInfo {
+		/*
+		** 8.266666667vw = 31px / 375px * 100
+		** 13.333333333vw = 50px / 375px * 100
+		** 78.4vw = 100vw - (13.333333333vw + 8.266666667vw)
+		*/
+		margin-left: 8.266666667vw;
+		width: 91.733333333%;
+	}
+
+	.treeKindContainer {
+		/*
+		** 8.266666667vw = 31px / 375px * 100
+		** 13.333333333vw = 50px / 375px * 100
+		** 78.4vw = 100vw - (13.333333333vw + 8.266666667vw)
+		*/
+		width: 100%;
+		margin-right: 13.333333333vw;
+	}
+
+	.treeKindElement {
+		/*
+		** 11.125vw = 89px / 1440px * 100
+		*/
+		width: clamp(48px, 11.125vw, 89px);
+	}
+
+	.treeKindElement {
+		/*
+		** 2vw = 16px / 800px * 100
+		*/
+		font-size: clamp(0.625em, 2vw, 1em);
+	}
+
+	.steps {
+		/*
+		** 8.266666667vw = 31px / 375px * 100
+		** 13.333333333vw = 50px / 375px * 100
+		** 78.4vw = 100vw - (13.333333333vw + 8.266666667vw)
+		*/
+		width: 90vw;
+		margin-right: 13.333333333vw;
+	}
+
+	.agroforestryLinkContainer {
+		width: 90vw;
+		justify-content: center;
+	}
+
+	.agroforestryLink {
+		font-size: 14px;
+		text-align: center;
+	}
+
+	.pictureCarousel {
+		border-radius: 20px;
+		width: 237px;
+		height: 158px;
+		margin: 0 20px 0 0;
+	}
+}
+
+@media screen and (max-width: 630px) {
+	.dynamicBreadcrumb {
+		margin-top: 40px;
+	}
+
+	.contactTextContainer > h1 {
+		/*
+		** 5.714285714vw = 36px / 630px * 100
+		*/
+		font-size: clamp(1.25em, 5.714285714vw, 2.5em);
+	}
+
+	.contactTextContainer > h2 {
+		/*
+		** 3.80952381vw = 24px / 630px * 100
+		*/
+		font-size: clamp(1em, 3.80952381vw, 1.5em);
+	}
+
+	.contactBoxContainer {
+		/*
+		** 83.650793651vw = 527px / 630px * 100
+		*/
+		width: 83.650793651vw;
+	}
+}

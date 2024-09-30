@@ -1,0 +1,18 @@
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    border: 1px solid #02302D;
+    padding: 0 10px;
+}
+
+.button > p {
+    margin-right: 5px;
+    color: rgba(2, 48, 45, 0.70);
+    font-family: Manrope;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 38px;
+}

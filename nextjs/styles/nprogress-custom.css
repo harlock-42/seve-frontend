@@ -1,0 +1,13 @@
+/* styles/nprogress-custom.css */
+#nprogress .bar {
+	background: #72BF01; /* Changer la couleur de la barre de progression ici */
+  }
+  
+  #nprogress .peg {
+	box-shadow: 0 0 10p#72BF01, 0 0 5px #72BF01; /* Changer la couleur des ombres ici */
+  }
+  
+  #nprogress .spinner-icon {
+	border-top-color: #72BF01; /* Changer la couleur du spinner ici */
+	border-left-color: #72BF01; /* Changer la couleur du spinner ici */
+  }

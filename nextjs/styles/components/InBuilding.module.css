@@ -1,0 +1,27 @@
+.container {
+	/*
+	** 221px / 1440px * 100 = 15.347222222vw
+	** 293px / 1440px * 100 = 20.347222222vw
+	*/
+	margin: 52px 15.347222222vw 0 20.347222222vw;
+}
+
+.container > h1 {
+	margin-top: 22px;
+	font-weight: 500;
+	/*
+	** 40px / 1440px * 100 = 2.777777778vw
+	*/
+	font-size: clamp(20px, 2.777777778vw ,40px);
+	/*
+	** 50px / 1440px * 100 =
+	*/
+	line-height: clamp(25px, 3.472222222vw, 50px);
+
+	color: #02302D;
+}
+
+.image {
+	width: 106px;
+	height: auto;
+}

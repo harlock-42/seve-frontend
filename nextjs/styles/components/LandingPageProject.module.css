@@ -1,0 +1,116 @@
+.project {
+	max-width: clamp(269.097222225px, 21.527777778vw, 310px); /* 310px / 1440px * 100 */display: flex;
+	margin-top: 35px;
+	flex-direction: column;
+	width: 100%;
+}
+
+.imageContainer {
+	position: relative;
+}
+
+.farmingKind {
+	/*
+	** 26,876513317% = 111px / 413px * 100
+	** 9.824561404% = 28px / 285px * 100
+	** 7.01754386% = 20px / 285px * 100
+	** 6.053268765% = 25px / 413px * 100
+	*/
+	padding: 0 8px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: absolute;
+	background-color: #FFF;
+	/* width: 111px; */
+	height: 28px;
+	top: 7.01754386%;
+	right: 6.053268765%;
+	border-radius: 20px;
+	border: 1px solid #02302D;
+}
+
+.farmingKind > p {
+	margin: 0 0 0 8px;
+	color: #02302D;
+	font-family: Manrope;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 38px;
+}
+
+.projectImage {
+	width: clamp(269.097222225px, 21.527777778vw, 310px); /* 310px / 1440px * 100 */
+	height: clamp(185.763888891px, 14.861111111vw, 214px); /* 0.690322581 * 269.097222225px | 214px / 1440px * 100 */
+	border-radius: 20px;
+	object-fit: cover;
+	object-position: center center;
+}
+
+.projectText {
+	margin-top: 15px;
+}
+
+.projectText > h1 {
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 21px;
+	
+	color: #02302D;
+}
+
+.projectText > h2 {
+	margin-top: 5px;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 21px;
+
+	color: #02302D;
+}
+
+.projectText > h2 > span {
+	color: #72BF01;
+}
+
+.projectText > h3 {
+	margin-top: 10px;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 30px;
+
+	font-feature-settings: 'liga' off;
+
+	color: #02302D;
+}
+
+@media screen and (max-width:1250px) {
+
+	.projectText > h1 {
+		font-weight: 600;
+		font-size: clamp(16px, 2.431610942vw, 20px); /* 20px / 658px * 100 */
+		line-height: 21px;
+		
+		color: #02302D;
+	}
+
+	.projectText > h2 {
+		margin-top: 5px;
+		font-weight: 600;
+		font-size: clamp(14px, 2.32172471vw, 16px); /* 14px / 603px * 100 */
+		line-height: 21px;
+
+		color: #02302D;
+	}
+
+	.projectText > h3 {
+		font-weight: 500;
+		font-size: 12px;
+		line-height: 30px;
+
+		font-feature-settings: 'liga' off;
+
+		color: #02302D;
+	}
+
+}

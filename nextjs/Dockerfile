@@ -1,0 +1,28 @@
+FROM node:20-alpine3.16
+
+ARG PAT_TOKEN \
+	NEXT_PUBLIC_API_SECRET \
+	NEXT_PUBLIC_BACKEND_URL_PORT \
+	NEXT_PUBLIC_BACKEND_URL_DOMAIN_NAME \
+	NEXT_PUBLIC_BACKEND_URL_PROTOCOL
+
+ENV NEXT_PUBLIC_API_SECRET=${NEXT_PUBLIC_API_SECRET} \
+	NEXT_PUBLIC_BACKEND_URL_PORT=${NEXT_PUBLIC_BACKEND_URL_PORT} \
+	NEXT_PUBLIC_BACKEND_URL_DOMAIN_NAME=${NEXT_PUBLIC_BACKEND_URL_DOMAIN_NAME} \
+	NEXT_PUBLIC_BACKEND_URL_PROTOCOL=${NEXT_PUBLIC_BACKEND_URL_PROTOCOL}
+
+RUN mkdir -p /var/app/
+
+RUN apk add --no-cache git
+
+RUN git clone https://harlock-42:${PAT_TOKEN}@github.com/harlock-42/seve-frontend.git /tmp/seve
+
+RUN mv /tmp/seve/nextjs /var/app/current
+
+WORKDIR /var/app/current
+
+RUN npm ci
+
+RUN npm install next
+
+RUN npm run build

@@ -1,0 +1,62 @@
+
+.staticBar {
+	width: 100%;
+	height: 10px;
+	background-color: #FFFFFF;
+}
+
+.dynamicBar {
+	height: 100%;
+	background-color: #72BF01;
+
+	/* transition: width 2s linear; */
+}
+
+.animatedBar {
+	animation-name: animateWidth;
+	animation-duration: 2s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+
+.data {
+	margin: 5px 0 0 0;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.data > p {
+	font-weight: 500;
+	font-size: 10px;
+	line-height: 22px;
+
+	color: #02302D;
+}
+
+.percentageAnimation {
+	opacity: 0;
+
+	animation-name: animatePercentage;
+	animation-duration: 0.5s;
+	animation-delay: 2s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+
+@keyframes animateWidth {
+	from {
+		width: 0
+	}
+	to {
+		width: var(--percentage);
+	}
+}
+
+@keyframes animatePercentage {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}

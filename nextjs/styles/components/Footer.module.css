@@ -1,0 +1,98 @@
+.footerContainer {
+	margin-top: 47px;
+	margin-left: 3.611111111vw; /* 52px / 1440px * 100 */
+	display: flex;
+}
+
+.seveLogoBackground {
+	position: relative;
+	width: 192px;
+	height: 192px;
+	background-color: #02302D;
+	border-radius: 10px;
+}
+
+.seveLogo {
+	position: absolute;
+	width: 50%;
+	height: auto;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.seveLogoContainer > p {
+	margin-top: 5px;
+	font-size: 16px;
+	line-height: 32px;
+
+	color: #FFFFFF;
+}
+
+.insta {
+	transition: transform 0.3s ease;
+}
+
+.insta:hover {
+	cursor: pointer;
+	transform: scale(1.5) translate(-25%, 0);
+}
+
+.linkedin {
+	margin-left: 10px;
+	transition: transform 0.3s ease;
+}
+
+.linkedin:hover {
+	transform: scale(1.5) translate(25%, 0);
+}
+
+.social > h4 {
+	font-weight: 800;
+	font-size: 12px;
+	line-height: 32px;
+
+}
+
+.social > h4:nth-of-type(2) {
+	margin-top: 30px;
+}
+
+.social {
+	margin-left: 40px;
+}
+
+.social p {
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 21px;
+
+}
+
+.white {
+	color: #FFFFFF;
+}
+
+.green {
+	color: #02302D;
+}
+
+.stroke {
+	/*
+	** 791px / 1440px * 100 = 54.930555556vw
+	*/
+	width: 54.930555556vw;
+	height: 1px;
+	background-color: #02302D;
+	/*
+	** (100vw - 54.930555556vw) / 2 = 22.534722222vw
+	*/
+	margin: 0 22.534722222vw;
+}
+
+@media screen and (max-width: 610px) {
+	.seveLogoBackground {
+		width: clamp(100px, 31.475409836vw, 190px); /* 192px / 610px * 100 */
+		height: clamp(100px, 31.475409836vw, 190px); /* 192px / 610px * 100 */
+	}
+}

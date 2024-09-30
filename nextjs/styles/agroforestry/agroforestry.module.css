@@ -1,0 +1,241 @@
+.main {
+	/*
+	** 4.305555556vw = 62px / 1440px * 100
+	*/
+	padding: 0 4.305555556vw;
+}
+
+.agroforestryTitle {
+	/*
+	** 16.25vw = 234px / 1440px * 100
+	*/
+	margin: 62px 0 69px 16.25vw;
+	color: #02302D;
+	font-size: 2.5em;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 49.5px;
+}
+
+.subjectOne:hover {
+	cursor: pointer;
+}
+
+.subjectTwo:hover {
+	cursor: pointer;
+}
+.subjectThree:hover {
+	cursor: pointer;
+}
+
+.subjectFour:hover {
+	cursor: pointer;
+}
+
+
+.imageContainer {
+	position: relative;
+	width: 100%;
+	height: 249px;
+	/* display: flex;
+	justify-content: center;
+	align-items: center; */
+	overflow: hidden;
+}
+
+.main > div {
+	margin: 0 0 8px 0;
+}
+
+.image {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.main > div h1 {
+	color: #FFF;
+	font-size: 2.5em;
+	font-weight: 500;
+	line-height: 49.5px;
+	text-shadow: -0.1px 0 #02302D, 0 0.1px #02302D, 0.1px 0 #02302D, 0 -0.1px #02302D;
+	top: 21px;
+}
+
+.main > div h3 {
+	margin: 8px 0 0 0;
+	color: #FFF;
+	font-size: 0.75em;
+	font-weight: 500;
+	line-height: 15px;
+}
+
+.number {
+	/*
+	** 13.079847909% = 172px / 1315px * 100
+	*/
+	position: absolute;
+	left: 13.079847909%;
+}
+
+.titleTextContainer {
+	/*
+	** 13.003802281% = 171px / 1315px * 100
+	*/
+	position: absolute;
+	top: 21px;
+	right: 13.003802281%;
+	width: 327px;
+}
+
+.title {
+	text-align: right;
+}
+
+.circle {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 26px;
+	height: 26px;
+	background-color: rgba(255, 255, 255, 0.50);
+	border-radius: 100%;
+}
+
+.rotated {
+	transition: transform 1s ease-in-out;
+	transform: rotate(90deg);
+}
+  
+
+.subjectOne .circle {
+	margin: 30px 0 0 0;	
+}
+
+.subjectTwo .circle {
+	margin: 5px 0 0 0;
+}
+
+.subjectThree .circle {
+	margin: 30px 0 0 0;
+}
+
+.subjectFour .circle {
+	margin: 57px 0 0 0;
+}
+
+.arrow {
+	color: #FFF;
+	font-size: 16px;
+	font-weight: 800;
+	line-height: 15px;
+}
+
+.textContainer {
+	/*
+	** 13.307984791% = 175px / 1315px * 100
+	*/
+	padding: 21px 13.307984791%;
+	animation: slide-down 1s ease-out forwards;
+}
+
+.textContainer p {
+	margin: 0 0 15px 0;
+	color: #02302D;
+	font-size: 0.875em;
+	font-weight: 500;
+	line-height: 15px;
+	letter-spacing: 0.75px;
+	text-align: justify;
+	text-justify: auto;
+}
+
+.list {
+	color: #02302D;
+	font-size: 0.875em;
+	line-height: 15px;
+	letter-spacing: 0.75px;
+	font-weight: 500;
+	padding: 0 0 0 20px;
+	margin: 0 0 15px 20px;
+	list-style-type: lower-alpha;
+}
+
+.footer {
+	margin: 177px 0 0 0;
+}
+
+@media screen and (max-width: 700px) {
+	/*
+	** 5.714285714vw = 40px / 700px * 100
+	*/
+	.agroforestryTitle {
+		font-size: clamp(1.25em, 5.714285714vw, 2.5em);
+	}
+
+	.main > div h1 {
+		/*
+		** 5.714285714vw = 40 / 700px * 100
+		** 7.071428571vw = 49.5px / 700px * 100
+		*/
+		font-size: clamp(1.25em, 5.714285714vw, 2.5em);
+		line-height: clamp( 24.75px, 7.071428571vw, 49.5px);
+	}
+
+	.titleTextContainer {
+		width: clamp(163.5px, 46.714285714vw, 327px);
+	}
+
+	.titleTextContainer > h3 {
+		font-size: 12px;
+	}
+
+	.subjectOne h3 {
+		margin: 44px 0 0 0;
+	}
+
+	.textContainer {
+		padding: 21px 5%;
+	}
+
+	.textContainer p {
+		font-size: 13px;
+	}
+
+}
+
+@media screen and (max-width: 460px) {
+	.circle {
+		display: none;	
+	}
+}
+
+@keyframes slide-down {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes pushDown {
+  0% {
+    margin-top: -100%;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+@keyframes rotate {
+	from {
+		rotate: 0;
+	}
+
+	to {
+		rotate: 90deg;
+	}
+}
