@@ -14,6 +14,7 @@ class UrlGenerator {
     }
 
     getUrl(args: string = ""): string {
+        console.log("--> url: ", this.protocol + "://" + this.domain + ":" + this.port + "/" + args)
         return this.protocol + "://" + this.domain + ":" + this.port + "/" + args
     }
 }
