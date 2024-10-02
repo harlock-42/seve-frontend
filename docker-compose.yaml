@@ -5,11 +5,11 @@ services:
       context: ./nextjs
       dockerfile: Dockerfile
       args:
-        NEXT_PUBLIC_BACKEND_URL: "nestjs"
+        NEXT_PUBLIC_BACKEND_URL: "http://nestjs:3001"
         NEXT_PUBLIC_API_SECRET: "ngDmUKoPG8KpO/09KPIaKPM+NTdzAsgGp0Z/GYkf5UIjwiwdCjcq8Gs8L2XbXGun+FrD4pCBpJQje4WjtMaLjw=="
-        PORT: 3000
+        PORT: 3002
     ports:
-      - 3000:3000
+      - 3002:3002
     networks:
       - shared-network
 
