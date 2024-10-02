@@ -31,6 +31,7 @@ export default function LandingPageProject({ className='', dragging=false, proje
 	const domain: string | undefined = process.env.NEXT_PUBLIC_BACKEND_URL_DOMAIN_NAME
 	const port: string | undefined = process.env.NEXT_PUBLIC_BACKEND_URL_PORT
 	const imageUrl = `${protocol}://${domain}:${port}/images/${project.profilePicture}`
+	console.log("image url: ", imageUrl)
 	const urlProject = `/projects/${project.id}`
 	const [image, setImage] = useState<string>('')
 	useEffect(() => {
@@ -39,6 +40,7 @@ export default function LandingPageProject({ className='', dragging=false, proje
 				const response = await axiosInstance.get(imageUrl, {
 					responseType: 'blob'
 				})
+				console.log("response: ", response)
 				const blobUrl = URL.createObjectURL(response.data)
 				setImage(blobUrl)
 			} catch (error) {
