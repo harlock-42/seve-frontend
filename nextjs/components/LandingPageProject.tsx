@@ -44,6 +44,7 @@ export default function LandingPageProject({ className='', dragging=false, proje
 				const blobUrl = URL.createObjectURL(response.data)
 				setImage(blobUrl)
 			} catch (error) {
+				console.log('Error fetching image:', error)
 				console.error('Error fetching image:', error)
 			}
 		}
