@@ -5,7 +5,6 @@ import Link from "next/link"
 import React, { useEffect, useState } from "react"
 import { useRouter } from "next/router"
 import FarmingKind, { ProductionKindType } from "./projects/FarmingKind"
-import axios from "axios"
 
 interface LandingPageProjectProps {
 	className?: string
@@ -38,16 +37,16 @@ export default function LandingPageProject({ className='', dragging=false, proje
 	useEffect(() => {
 		async function fetchImage() {
 			try {
-				const response = await axios.get(imageUrl, {
-				  responseType: 'blob',
-				});
-				console.log("response: ", response);
-				const blobUrl = URL.createObjectURL(response.data);
-				setImage(blobUrl);
-			  } catch (error) {
-				console.log('Error fetching image:', error);
-				console.error('Error fetching image:', error);
-			  }
+				const response = await axiosInstance.get(imageUrl, {
+					responseType: 'blob'
+				})
+				console.log("response: ", response)
+				const blobUrl = URL.createObjectURL(response.data)
+				setImage(blobUrl)
+			} catch (error) {
+				console.log('Error fetching image:', error)
+				console.error('Error fetching image:', error)
+			}
 		}
 		fetchImage()
 	}, [imageUrl])
