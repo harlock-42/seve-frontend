@@ -44,9 +44,7 @@ jobs:
 
       - name: build image
         env:
-          NEXT_PUBLIC_BACKEND_URL_PORT: ${{ vars.NEXT_PUBLIC_BACKEND_URL_PORT }}
-          NEXT_PUBLIC_BACKEND_URL_DOMAIN_NAME: ${{ vars.NEXT_PUBLIC_BACKEND_URL_DOMAIN_NAME }}
-          NEXT_PUBLIC_BACKEND_URL_PROTOCOL: ${{ vars.NEXT_PUBLIC_BACKEND_URL_PROTOCOL }}
+          NEXT_PUBLIC_BACKEND_URL: ${{ vars.NEXT_PUBLIC_BACKEND_URL }}
           NEXT_PUBLIC_API_SECRET: ${{ vars.NEXT_PUBLIC_API_SECRET }}
           DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
           K3S_DEPLOYMENT_NAME: ${{ vars.K3S_DEPLOYMENT_NAME }}
@@ -54,9 +52,7 @@ jobs:
           PORT: ${{ vars.PORT }}
         run: |
           docker build -t $DOCKER_USERNAME/$K3S_NAMESPACE-$K3S_DEPLOYMENT_NAME:latest \
-          --build-arg NEXT_PUBLIC_BACKEND_URL_PORT=$NEXT_PUBLIC_BACKEND_URL_PORT \
-          --build-arg NEXT_PUBLIC_BACKEND_URL_DOMAIN_NAME=$NEXT_PUBLIC_BACKEND_URL_DOMAIN_NAME \
-          --build-arg NEXT_PUBLIC_BACKEND_URL_PROTOCOL=$NEXT_PUBLIC_BACKEND_URL_PROTOCOL \
+          --build-arg NEXT_PUBLIC_BACKEND_URL=$NEXT_PUBLIC_BACKEND_URL \
           --build-arg NEXT_PUBLIC_API_SECRET=$NEXT_PUBLIC_API_SECRET \
           --build-arg PORT=$PORT \
           ./nextjs

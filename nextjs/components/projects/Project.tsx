@@ -18,10 +18,8 @@ export default function Project({ className, data }: ProjectProps) {
 	const imageDescription: string = `Image de profile de ${data.name}`
 	const [treeNumber, setTreeNumber] = useState<number>(0)
 	
-	const protocol: string | undefined = process.env.NEXT_PUBLIC_BACKEND_URL_PROTOCOL
-	const domain: string | undefined = process.env.NEXT_PUBLIC_BACKEND_URL_DOMAIN_NAME
-	const port: string | undefined = process.env.NEXT_PUBLIC_BACKEND_URL_PORT
-	const urlImage = `${protocol}://${domain}:${port}/images/${data.profilePicture}`
+	const domain: string | undefined = process.env.NEXT_PUBLIC_BACKEND_URL
+	const urlImage = `${domain}/images/${data.profilePicture}`
 	const projectPath: string = `/projects/${data.id}`
 	const [image, setImage] = useState<string>('')
 	useEffect(() => {

@@ -24,10 +24,8 @@ interface ContactUsProps {
 }
 
 export default function handler({ accessToken }: ContactUsProps) {
-	const protocol: string | undefined = process.env.NEXT_PUBLIC_BACKEND_URL_PROTOCOL
-	const domain: string | undefined = process.env.NEXT_PUBLIC_BACKEND_URL_DOMAIN_NAME
-	const port: string | undefined = process.env.NEXT_PUBLIC_BACKEND_URL_PORT
-	const url = `${protocol}://${domain}:${port}/mail/send`
+	const domain: string | undefined = process.env.NEXT_PUBLIC_BACKEND_URL
+	const url = `${domain}/mail/send`
 
 	const formData = useRef<ReceiveEmailInputType>({
 		from: "",

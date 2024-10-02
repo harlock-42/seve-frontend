@@ -27,10 +27,8 @@ interface Project {
 
 export default function LandingPageProject({ className='', dragging=false, project }: LandingPageProjectProps) {
 	const router = useRouter()
-	const protocol: string | undefined = process.env.NEXT_PUBLIC_BACKEND_URL_PROTOCOL
-	const domain: string | undefined = process.env.NEXT_PUBLIC_BACKEND_URL_DOMAIN_NAME
-	const port: string | undefined = process.env.NEXT_PUBLIC_BACKEND_URL_PORT
-	const imageUrl = `${protocol}://${domain}:${port}/images/${project.profilePicture}`
+	const domain: string | undefined = process.env.NEXT_PUBLIC_BACKEND_URL
+	const imageUrl = `${domain}/images/${project.profilePicture}`
 	console.log("image url: ", imageUrl)
 	const urlProject = `/projects/${project.id}`
 	const [image, setImage] = useState<string>('')
